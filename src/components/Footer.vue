@@ -2,7 +2,7 @@
 <template>  
     <footer>   
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div class="sm:flex sm:items-center sm:justify-between" style="margin: 0 180px">
+        <div class="sm:flex sm:items-center sm:justify-between mx-[180px]">
             <div class="flex fles-wrap items-left mr-4">
                 <span class="text-md text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href=# class="hover:underline">DiTenun Ulospedia</a>
                 </span>
