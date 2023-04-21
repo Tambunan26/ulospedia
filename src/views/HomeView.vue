@@ -78,13 +78,13 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-import Footer from '@/components/Footer.vue';
-import Button from '@/components/Button.vue';
-import Carousel from '@/components/Carousel.vue';
-import ragamUlos from '@/components/ragamUlos.vue';
-import jenisUlos from '@/components/jenisUlos.vue';
-import videPlayer from '@/components/videPlayer.vue'
+import HelloWorld from '@/components/home/HelloWorld.vue'
+import Footer from '@/components/home/Footer.vue';
+import Button from '@/components/home/Button.vue';
+import Carousel from '@/components/home/Carousel.vue';
+import ragamUlos from '@/components/home/ragamUlos.vue';
+import jenisUlos from '@/components/home/jenisUlos.vue';
+import videPlayer from '@/components/home/videPlayer.vue'
 
 //icon
 import * as OutlineIcons from '@heroicons/vue/outline'
