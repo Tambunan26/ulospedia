@@ -4,9 +4,9 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 
     <!-- Hero section -->
-    <div class="flex flex-wrap items-center justify-center md:justify-between py-16 px-6">
+    <div class="flex flex-wrap items-center justify-center md:flex-row py-16 px-6">
       <div class="md:w-1/2 text-center md:text-left md:text-xl">
-        <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">Lebih dekat dengan <span class="text-blue-600">Ulos</span> bersama <span class="text-blue-600">Ulospedia</span></h1>
+        <h1 class="text-5xl font-bold text-gray-900 leading-tight">Lebih dekat dengan <span class="text-blue-600">Ulos</span> bersama <span class="text-blue-600">Ulospedia</span></h1>
         <p class="mt-4 text-gray-600 text-lg md:text-xl">Kembangkan pengetahuanmu tentang ulos 
           <br> bersama Ditenun Ulospedia</p>
         <div class="mt-8 md:mt-12">
@@ -20,13 +20,13 @@
     </div>
 
     <!-- Two card -->
-    <div class="flex flex-row gap-6">
+    <div class="flex justify-center gap-8">
       <!-- card 1 -->
-      <div class="w-1/2 flex-1">
-        <div class="max-w-sm bg-[#D6DDF0] overflow-hidden justify-items-start text-left" style="box-shadow: 18px 18px 0px #000000">
+      <div class="w-1/2 sm:w-full flex-1">
+        <div class="bg-[#D6DDF0] overflow-hidden justify-items-start text-left" style="box-shadow: 18px 18px 0px #000000">
           <div class="px-6 py-4">
-            <h4 class="font-bold text-xl mb-2">Apa itu ulos?</h4>
-            <p class="text-gray-700 text-base">Ulos merupakan selendang tenun tradisional Batak yang berasal dari Sumatera Utara. Kain ini berperan penting dalam setiap tahap kehidupan budaya Batak, yaitu kelahiran, kehidupan, dan kematian.</p>
+            <h4 class="font-bold text-2xl mb-2">Apa itu ulos?</h4>
+            <p class="text-gray-700 text-lg">Ulos merupakan selendang tenun tradisional Batak yang berasal dari Sumatera Utara. Kain ini berperan penting dalam setiap tahap kehidupan budaya Batak, yaitu kelahiran, kehidupan, dan kematian.</p>
           </div>
           <div class="px-6 py-4 flex items-center">
             <a href="#" class="hover:text-blue-700 text-blue-600 font-medium underline decoration-solid py-2 px-4 rounded mr-2">Jelajahi Ulos</a>
@@ -40,10 +40,10 @@
 
     <!-- card 2 -->
     <div class="w-1/2 flex-1">
-        <div class="max-w-sm bg-[#FBEFD2] overflow-hidden justify-items-start text-left" style="box-shadow: 18px 18px 0px #000000">
+        <div class="bg-[#FBEFD2] overflow-hidden justify-items-start text-left" style="box-shadow: 18px 18px 0px #000000">
           <div class="px-6 py-4">
-            <h4 class="font-bold text-xl mb-2">Lahir, hidup, dan mati</h4>
-            <p class="text-gray-700 text-base">Ulos merupakan simbol kesuburan dalam upacara kelahiran, bagian penting dari tata cara pelaksanaan upacara adat selama hidup, serta tanda berkabung dan penghormatan terakhir pada saat kematian.</p>
+            <h4 class="font-bold text-2xl mb-2">Lahir, hidup, dan mati</h4>
+            <p class="text-gray-700 text-lg">Ulos merupakan simbol kesuburan dalam upacara kelahiran, bagian penting dari tata cara pelaksanaan upacara adat selama hidup, serta tanda berkabung dan penghormatan terakhir pada saat kematian.</p>
           </div>
           <div class="px-6 py-4 flex items-center">
             <a href="#" class="hover:text-blue-700 text-blue-600 font-medium underline decoration-solid py-2 px-4 rounded mr-2">Telusuri Sejarah Ulos</a>
@@ -55,7 +55,23 @@
       </div>
    </div>
 
+   <!-- carousel -->
+   <Carousel />
   </div>
+
+   <!-- Ragam ulos -->
+   <ragamUlos />
+
+<div class="mx-[180px]">
+  <!-- jenis Ulos -->
+  <jenisUlos />
+
+  <!-- Video player -->
+  <videPlayer />
+</div>
+   
+
+  
 
   <Footer />
 </template>
@@ -65,6 +81,10 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import Footer from '@/components/Footer.vue';
 import Button from '@/components/Button.vue';
+import Carousel from '@/components/Carousel.vue';
+import ragamUlos from '@/components/ragamUlos.vue';
+import jenisUlos from '@/components/jenisUlos.vue';
+import videPlayer from '@/components/videPlayer.vue'
 
 //icon
 import * as OutlineIcons from '@heroicons/vue/outline'
@@ -73,7 +93,7 @@ export default {
   name: 'HomeView',
   components: {
     // eslint-disable-next-line vue/no-unused-components
-    HelloWorld, Footer, Button, OutlineIcons
+    HelloWorld, Footer, Button, OutlineIcons, Carousel, ragamUlos, jenisUlos, videPlayer
   }
 }
 </script>
